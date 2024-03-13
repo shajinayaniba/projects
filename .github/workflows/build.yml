@@ -26,7 +26,7 @@ jobs:
           docker build -t swiggy-clone .
           docker tag swiggy-clone aakibkhan1212/swiggy-clone:latest
           docker login -u ${{ secrets.Dockerhub_username }} -p ${{ secrets.Dockerhub_token }}
-          docker push aakibkhan1212/swiggy-clone:latest
+          docker push shajinayaniba/swiggy-clone:latest
         env:
           DOCKER_CLI_ACI: 1
   deploy:
